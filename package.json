@@ -1,0 +1,32 @@
+{
+  "name": "webapp-angular1x",
+  "version": "1.0.0",
+  "description": "This is sample webapp using angular.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PraveenJP/webapp-angular1x.git"
+  },
+  "keywords": [
+    "singlepageapp",
+    "webapp",
+    "angular",
+    "node",
+    "frontend"
+  ],
+  "author": "Praveen J",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PraveenJP/webapp-angular1x/issues"
+  },
+  "homepage": "https://github.com/PraveenJP/webapp-angular1x#readme",
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "express": "^4.13.4",
+    "jquery": "^2.2.3"
+  }
+}
