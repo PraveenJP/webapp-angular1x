@@ -1,27 +1,27 @@
 <doctype HTML>
-<html lang="en">
+<html lang="en" ng-app="app">
     <head>
         <meta charset="utf-8"/>
         <title>Sample app</title>
         
         <!--css stylesheet-->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         
         <!--Font Section-->
         <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,400italic,300' rel='stylesheet' type='text/css'>
     </head>
-    <body ng-cloak ng-app="app">
+    <body ng-cloak>
         
+        <!--Header-->
+        <div header></div>
+        <!--Main Content-->
         <div class="container">
-            <!--Header-->
-            <div header></div>
-            <!--Main Content-->
             <div ui-view></div>
-            {{12+12}}
-            <!--Footer-->
-            <div footer></div>
         </div>
+        <!--Footer-->
+        <div footer></div>
         
         <!--Script section-->
         <script src="node_modules/angular/angular.min.js"></script>
