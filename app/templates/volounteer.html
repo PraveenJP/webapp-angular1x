@@ -1,3 +1,122 @@
+<div class="jumbotron vol-jumbotron">
+    <h1 class="vol-header">Welcome to Manuel Dub <br> Fesitval Volunteers</h1>
+    <p class="vol-content form-top">Manuel Dub is strictlt not-for-profit event dedicated to the menory of Manuel. On the one hand, this has enabled us to host some of dub music's finest artist who after feeling moved by the energy, dedicated and love that goes into the event agree to perform for a reduced fee or even free of charge. On the other hand it means that we are in constant need of volunteers to make it happen and keep it going</p>
+</div>
+
 <div class="jumbotron cus-jumbotron">
-    <h1>Volounteer</h1>
+    <h1 class="vol-cen-header">Fill up the application form <br> And <br> Join our family</h1>
+</div>
+
+<div class="jumbotron vol-jumbotron">
+    <p>You simply just have to choose the shift you want in our system. You are going to provide us with few personal details as well as professional background and skills but don't worry,we only want to know how we can use your awesome skills to arrange the best edition of MD festival ever!!</p>
+    <p class="vol-content-form">So tell us a bit about yourself filling up the form below:</p>
+    
+    <form ng-submit="sendForm(vol)">
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">First Name</label>
+                        <input type="text" ng-model="vol.firstname" class="form-control cus-form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Last Name</label>
+                        <input type="text" ng-model="vol.lastname" class="form-control cus-form-control"/>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        
+        <div class="row form-top">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Address</label>
+                        <fieldset class="form-group" ng-init="countryList()">
+                            <label>Country</label>
+                            <select ng-model="vol.country" class="form-control cus-form-control">
+                            <option class="form-country" ng-repeat="country in countries" ng-value="{{country.code}}">{{country.name}}</option>
+                            </select>
+                        </fieldset>
+                        <div class="form-group">
+                            <label>Street</label>
+                            <input type="text" ng-model="vol.street" class="form-control cus-form-control"/>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="form-group">
+                                    <label>City</label>
+                                    <input type="text" ng-model="vol.city" class="form-control cus-form-control"/>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <label>ZIP Code</label>
+                                    <input type="text" ng-model="vol.zip" class="form-control cus-form-control"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Gender</label>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label class="radio-inline"><input class="cus-radio" type="radio" name="gender" ng-model="vol.gender" value="M"><span>M</span></label>
+                            </div>
+                            <div class="col-md-2">
+                                <label class="radio-inline"><input class="cus-radio" type="radio" name="gender" ng-model="vol.gender" value="F"><span>F</span></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Email</label>
+                        <input type="email" ng-model="vol.email" class="form-control cus-form-control"/>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Telephone No.</label>
+                        <input type="tel" ng-model="vol.tel" class="form-control cus-form-control"/>
+                        <h5>Enter telephone number.Add +XX for international numbers.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-md-6">
+                    <label class="form-label">Skills</label>
+                    <div class="form-group" ng-repeat="skill in skills">
+                        <label class="checkbox-inline"><input type="checkbox" ng-model="vol.skills" value="{{skill}}" /><span>{{skill}}</span></label>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-label">Comments and other relevant experience</label>
+                        <textarea class="form-control" rows="15" ng-model="vol.comments"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div align="center" class="form-top">
+            <input type="submit" class="btn btn-yellow" value="Submit">
+        </div>
+    </form>
+    <p class="video-content form-top">Check the video below to get an impression of Manuel Dub vibe, and how mush volunteer mean for us.</p>
+    <div class="form-top" align="center">
+        <iframe class="embed-responsive-item yt-video" width="560" height="315" src="https://www.youtube.com/embed/ywL1wQ_StHo" frameborder="0" allowfullscreen></iframe>
+    </div>
 </div>

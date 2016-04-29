@@ -25,7 +25,8 @@ app.config(function($stateProvider,$urlRouterProvider){
     })
     .state('volounteer',{
         url:'/volounteer',
-        templateUrl:'templates/volounteer.html'
+        templateUrl:'templates/volounteer.html',
+        controller:'volunteer'
     });
     
     $urlRouterProvider.otherwise('/');
