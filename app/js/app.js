@@ -1,5 +1,5 @@
 'use strict'
-var app = angular.module('app',['ui.router','uiGmapgoogle-maps']);
+var app = angular.module('app',['ui.router','ngMap']);
 
 app.config(function($stateProvider,$urlRouterProvider){
     $stateProvider
