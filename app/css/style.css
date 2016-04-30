@@ -8,6 +8,10 @@ html,body{
     background-size: 100% 100%;        
     color:#fff;         
 }
+h2{
+    text-transform: uppercase;
+    font-weight: bold;
+}
 .container{    
     min-height: 100%;
 }
@@ -156,6 +160,14 @@ input[type='checkbox']:after{
     text-align: center;
     width: 60%;
     margin: auto;
+}
+.contact-address{
+    font-size: 16px !important;
+    font-weight: bold;
+    line-height: 36px !important;
+}
+.angular-google-map-container {
+        height: 400px;
 }
 @media screen and (max-width: 768px) {
     .custom-nav-right>li>a, .custom-nav-right>li{

@@ -1,5 +1,5 @@
 'use strict'
-var app = angular.module('app',['ui.router']);
+var app = angular.module('app',['ui.router','uiGmapgoogle-maps']);
 
 app.config(function($stateProvider,$urlRouterProvider){
     $stateProvider
@@ -21,7 +21,8 @@ app.config(function($stateProvider,$urlRouterProvider){
     })
     .state('contact',{
         url:'/contact',
-        templateUrl:'templates/contact.html'
+        templateUrl:'templates/contact.html',
+        controller:'contact'
     })
     .state('volounteer',{
         url:'/volounteer',
