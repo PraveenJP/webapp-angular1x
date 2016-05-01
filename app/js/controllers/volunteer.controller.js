@@ -1,7 +1,7 @@
-app.controller('volunteer',function($scope,$http){
+app.controller('volunteer',function($scope,$http,webservice){
     
    $scope.countryList = function(){
-       $http.get('../data/countries.json').then(function(response){          
+       webservice.countryData().then(function(response){          
           $scope.countries = response.data;
        });
    }

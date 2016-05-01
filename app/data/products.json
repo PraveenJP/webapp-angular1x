@@ -1,0 +1,50 @@
+[
+    {
+        "name":"Manuel dub1",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"3"
+    },
+    {
+        "name":"Manuel dub2",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"6"
+    },
+    {
+        "name":"Manuel dub3",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"8"
+    },
+    {
+        "name":"Manuel dub4",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"2"
+    },
+    {
+        "name":"Manuel dub5",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"10"
+    },
+    {
+        "name":"Manuel dub6",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"20"
+    },
+    {
+        "name":"Manuel dub7",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"7"
+    },
+    {
+        "name":"Manuel dub8",
+        "img":"https://placekitten.com/150/150",
+        "desc":"Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "price":"20"
+    }
+]

@@ -1,3 +1,17 @@
-<div class="jumbotron cus-jumbotron">
-    <h1>Shop</h1>
+<div>
+    <h2>Shop</h2>
+    <div class="row" ng-init="getProductlist()">
+        <div class="col-md-12">
+            <span ng-repeat="product in products track by $index"
+            <div class="col-md-3">
+                <div class="card">
+                    <h4>{{product.name}}</h4>
+                    <img ng-src="{{product.img}}" alt="image" />
+                    <p>{{product.desc}}</p>
+                    <h3>Price : {{product.price}} $</h3>
+                    <button ng-click="addtoCart($index)" class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

@@ -3,20 +3,31 @@
     <div class="row">
         <div class="col-md-12">
             <div class="col-md-8">
-            <form ng-submit="contactForm(contact)">
+            <form name="contactForm" ng-submit="contactForm(contact)">
                 <div class="form-group">
                     <label for="name" class="form-label">Name</label>
-                    <input type="name" ng-model="contact.name" class="form-control cus-form-control"/>
+                    <input type="name" name="cname" ng-model="contact.name" class="form-control cus-form-control" required/>
+                    <div ng-show="contactForm.$submitted || contactForm.cname.$touched">
+                        <div class="error" ng-show="contactForm.cname.$error.required">Name is required.</div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="form-label">Email</label>
-                    <input type="email" ng-model="contact.email" class="form-control cus-form-control"/>
+                    <input type="email" name="cemail" ng-model="contact.email" class="form-control cus-form-control" required/>
+                    <div ng-show="contactForm.$submitted || contactForm.cemail.$touched">
+                        <div class="error" ng-show="contactForm.cemail.$error.required">Email is required.</div>
+                        <div class="error" ng-show="contactForm.cemail.$error.email">Email is not vaild.</div>
+                    </div>
                 </div>
                 <div class="form-group">
                     <label for="name" class="form-label">Phone No</label>
-                    <input type="tel" ng-model="contact.tel" class="form-control cus-form-control"/>
+                    <input type="tel" name="ctel" ng-model="contact.tel" class="form-control cus-form-control" required/>
+                    <div ng-show="contactForm.$submitted || contactForm.ctel.$touched">
+                        <div class="error" ng-show="contactForm.ctel.$error.required">Phone no is required.</div>
+                        <div class="error" ng-show="contactForm.ctel.$error.email">Phone no is not vaild.</div>
+                    </div>
                 </div>
-                <input type="submit" class="btn btn-yellow pull-right" value="Send"/>
+                <input ng-disabled="contactForm.$invalid" type="submit" class="btn btn-yellow pull-right" value="Send"/>
             </form>
             </div>
             <div class="col-md-4">
@@ -30,7 +41,7 @@
     </div>
     <div class="row form-top">
         <div class="col-md-12">
-             <ng-map center="[40.74, -74.18]"></ng-map>
+             <ng-map class="map" center="[40.74, -74.18]"></ng-map>
         </div>
     </div>
 </div>

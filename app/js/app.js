@@ -13,11 +13,13 @@ app.config(function($stateProvider,$urlRouterProvider){
     })
     .state('about',{
         url:'/about',
-        templateUrl:'templates/about.html'
+        templateUrl:'templates/about.html',
+        controller:'about'
     })
     .state('shop',{
         url:'/shop',
-        templateUrl:'templates/shop.html'
+        templateUrl:'templates/shop.html',
+        controller:'shop'
     })
     .state('contact',{
         url:'/contact',

@@ -169,6 +169,26 @@ input[type='checkbox']:after{
 .angular-google-map-container {
         height: 400px;
 }
+.error{
+    color: red;
+    font-weight: bold;
+}
+.map{
+    height:300px;
+}
+.card{
+    background-color: #191919;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 1px 0px 5px 0px #403C3C;
+    margin: 20px 0px 20px 0px;
+}
+.cus-badge{
+    position: absolute;
+    top: 4px;
+    left: 37px;
+    background-color: red;
+}
 @media screen and (max-width: 768px) {
     .custom-nav-right>li>a, .custom-nav-right>li{
         display: none !important;
