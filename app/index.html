@@ -7,6 +7,7 @@
         <!--css stylesheet-->
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
         <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="node_modules/vegas/dist/vegas.min.css" />
         <link rel="stylesheet" href="css/style.css" />
         
         <!--Font Section-->
@@ -28,6 +29,7 @@
         <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
         <script src="node_modules/jquery/dist/jquery.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/vegas/dist/vegas.min.js"></script>
         
         <!--Google Map Integration-->
         <script src="https://maps.google.com/maps/api/js?libraries=placeses,visualization,drawing,geometry,places"></script>
@@ -55,5 +57,15 @@
                 display: none !important;
             }
         </style>
+        <script>
+            $("#example, body").vegas({
+                slides: [
+                    { src: "/img/1.jpg" },
+                    { src: "/img/2.png" },
+                    { src: "/img/3.png" },
+                    { src: "/img/4.jpg" }
+                ]
+            });
+        </script>
     </body>
 </html>

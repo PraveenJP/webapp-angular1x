@@ -2,11 +2,10 @@
 html,body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
-    /*background-color: #191919;*/
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/bg.jpg) no-repeat;
-    background-position: 50% 50%;
-    background-size: 100% 100%;        
-    color:#fff;         
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ) no-repeat;
+    color:#fff;
+    margin:0;
+    padding: 0;
 }
 h2{
     text-transform: uppercase;
@@ -78,9 +77,8 @@ h2{
     margin: 2px -19px 0px -14px;
 }
 .cus-jumbotron{
-    border-radius: 0 !important;
-    background-color: #000;
-    opacity: 0.7;
+    border-radius: 0 !important;    
+    background-color: rgba(25, 25, 25, 0.76) !important;
 }
 .vol-header{
     text-align: center;
@@ -177,11 +175,11 @@ input[type='checkbox']:after{
     height:300px;
 }
 .card{
-    background-color: #191919;
+    background-color: rgba(25, 25, 25, 0.76);
     padding: 15px;
     text-align: center;
     box-shadow: 1px 0px 5px 0px #403C3C;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 0px 20px 0px;    
 }
 .cus-badge{
     position: absolute;
@@ -193,6 +191,12 @@ input[type='checkbox']:after{
     font-size: 18px !important;
     text-align: justify;    
     font-style: italic;
+}
+.cus-navbar{
+    background-color: rgba(25, 25, 25, 0.90);
+}
+.cus-home{
+    margin-top: 400px;
 }
 @media screen and (max-width: 768px) {
     .custom-nav-right>li>a, .custom-nav-right>li{
