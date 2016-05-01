@@ -189,6 +189,11 @@ input[type='checkbox']:after{
     left: 37px;
     background-color: red;
 }
+.about-content{
+    font-size: 18px !important;
+    text-align: justify;    
+    font-style: italic;
+}
 @media screen and (max-width: 768px) {
     .custom-nav-right>li>a, .custom-nav-right>li{
         display: none !important;

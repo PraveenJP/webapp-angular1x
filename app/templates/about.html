@@ -1,4 +1,13 @@
-<div class="jumbotron cus-jumbotron">
-    <h2>About</h2>
-    <p></p>
+<div class="jumbotron vol-jumbotron">
+    <div class="row" ng-init="getAboutContent()">
+        <div class="col-mg-12" ng-repeat="about in aboutContent">
+            <div class="col-md-8">
+                <h2>{{about.title}}</h2>
+                <p class="about-content">{{about.content}}</p>      
+            </div>
+            <div class="col-md-4">
+                <img ng-src="{{about.img}}" alt="{{about.title}}" />
+            </div>
+        </div>
+    </div>
 </div>
