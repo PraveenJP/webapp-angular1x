@@ -1,3 +1,15 @@
-<div class="jumbotron cus-jumbotron">
-    <h2>MD6</h2>
+<div class="jumbotron cus-jumbotron" ng-init="getMd6Content()">
+    <span ng-repeat="md6 in md6Content">
+        <h2>{{md6.title}}</h2>
+        <p>{{md6.content}}</p>
+    </span>
+    <div class="row">
+        <div class="col-md-12">
+            <span ng-repeat="md6img in md6ContentImg track by $index">
+                <div align="center" class="col-md-4">
+                    <img class="img-responsive img-thumbnail" width="200" ng-src="img/{{md6img.src}}" />
+                </div>                        
+            </span>
+        </div>
+    </div>
 </div>

@@ -10,7 +10,8 @@ app.config(function($stateProvider,$urlRouterProvider){
     })
     .state('md6',{
         url:'/md6',
-        templateUrl:'templates/md6.html'
+        templateUrl:'templates/md6.html',
+        controller:'md6'
     })
     .state('about',{
         url:'/about',

@@ -113,7 +113,7 @@ h2{
     border-left: none;
     border-right: none;
     border-radius: 0 !important;
-    color: #fff;
+    color: #fff !important;
 }
 .vol-content-form{
     text-align: center;

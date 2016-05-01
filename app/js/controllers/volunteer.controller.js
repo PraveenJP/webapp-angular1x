@@ -1,4 +1,6 @@
-app.controller('volunteer',function($scope,$http,webservice){
+app.controller('volunteer',function($scope,$http,webservice,$timeout){
+   
+   $scope.success = false;
     
    $scope.countryList = function(){
        webservice.countryData().then(function(response){          
@@ -10,6 +12,10 @@ app.controller('volunteer',function($scope,$http,webservice){
    
    $scope.sendForm = function(vol){
        console.log(vol);
+       $scope.success = true;
+       $timeout(function(){
+          $scope.success = false;
+       },5000);
    }
     
 });
