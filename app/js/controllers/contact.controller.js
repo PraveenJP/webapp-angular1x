@@ -1,7 +1,11 @@
-app.controller('contact',function($scope){
+app.controller('contact',function($scope,$timeout){
     
-   $scope.contactForm = function(contact){
+   $scope.contactsForm = function(contact){
        console.log(contact);
+       $scope.contactSuccess = true;
+       $timeout(function(){
+           $scope.contactSuccess = false;
+       },5000);
    }
    
 });

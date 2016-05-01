@@ -3,7 +3,7 @@
     <div class="row">
         <div class="col-md-12">
             <div class="col-md-8">
-            <form name="contactForm" ng-submit="contactForm(contact)">
+            <form name="contactForm" ng-submit="contactsForm(contact)" novalidate>
                 <div class="form-group">
                     <label for="name" class="form-label">Name</label>
                     <input type="name" name="cname" ng-model="contact.name" class="form-control cus-form-control" required/>
@@ -26,6 +26,9 @@
                         <div class="error" ng-show="contactForm.ctel.$error.required">Phone no is required.</div>
                         <div class="error" ng-show="contactForm.ctel.$error.email">Phone no is not vaild.</div>
                     </div>
+                </div>
+                 <div ng-show="contactSuccess" class="alert alert-success">
+                    Thanks for contact. we will reach your soon
                 </div>
                 <input ng-disabled="contactForm.$invalid" type="submit" class="btn btn-yellow pull-right" value="Send"/>
             </form>
